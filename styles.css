@@ -4,42 +4,42 @@ body {
 
 #section1 {
     padding-top: 50px;
-    height: 500px;
+    height: 750px;
     color: #fff;
-    background-color: #1E88E5;
+    background-color: black;
 }
 
 #section2 {
     padding-top: 50px;
-    height: 500px;
+    height: 750px;
     color: #fff;
     background-color: #673ab7;
 }
 
 #section3 {
     padding-top: 50px;
-    height: 500px;
+    height: 750px;
     color: #fff;
     background-color: #ff9800;
 }
 
 #section4 {
     padding-top: 50px;
-    height: 500px;
+    height: 750px;
     color: #fff;
     background-color: #00bcd4;
 }
 
 #section5 {
     padding-top: 50px;
-    height: 500px;
+    height: 750px;
     color: #fff;
     background-color: #009688;
 }
 
 #section6 {
     padding-top: 50px;
-    height: 500px;
+    height: 750px;
     color: #fff;
     background-color: #673ab7;
 }
@@ -59,8 +59,10 @@ body {
     width: 0%;
 }
 
-.navbar-collapse {
-    background-color: #333;
+.navbar {
+    background-color: black;
+    border-bottom: 0;
+    min-height: 0px;
 }
 
 footer {
@@ -68,4 +70,28 @@ footer {
     height: 200px;
     color: #fff;
     background-color: #1E88E5;
+}
+
+.nav-pills>li {
+    color: black;
+    background-color: black;
+}
+
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #333;
+    border-bottom: 0px;
+    border-radius: 0px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.nav-link {
+    color: #333;
 }
