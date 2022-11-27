@@ -12,38 +12,32 @@ body {
     max-width: 1500px;
 }
 
-.section {
+.container {
     padding-top: 50px;
-    max-width: 1750px;
+    max-width: 1180px;
     min-height: 90vh;
-    ;
     color: #F8F8F8;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #030200;
+    display: block;
+    box-sizing: border-box;
+}
+
+#alex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgAlex {
+    float: right;
 }
 
 h1,
 h2 {
     font-weight: bold;
     text-transform: uppercase;
-}
-
-
-
-#alex {
-    background-color: #030200;
-    justify-content: center;
-}
-
-#about {
-    background-color: #030200;
-    justify-content: center;
-}
-
-#skills {
-    background-color: #030200;
-}
-
-#contact {
-    background-color: #030200;
 }
 
 .page-progress-container {
@@ -67,20 +61,30 @@ h2 {
     background-color: transparent;
 }
 
+.navbar-toggle {
+    border: 0
+}
+
 .nav-pills>li {
-    color: black;
+    color: #23527c;
     background-color: black;
 }
 
 
 .nav-pills>li.active>a,
 .nav-pills>li>a:focus,
-.nav-pills>li.active>a:hover,
-.nav-pills>li>a:hover {
-    color: #fff;
+.nav-pills>li.active>a:hover {
+    color: #23c1cb;
     background-color: #333;
     border-bottom: 0px;
     border-radius: 0px;
+}
+
+.nav-pills>li>a:hover {
+    background-color: #333;
+    border-bottom: 0px;
+    border-radius: 0px;
+    color: white;
 }
 
 
@@ -91,5 +95,9 @@ h2 {
 }
 
 .nav-link {
-    color: #333;
+    color: rgb(156, 156, 156);
+}
+
+.navbar-collapse {
+    background-color: black;
 }
