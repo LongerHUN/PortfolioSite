@@ -1,47 +1,48 @@
 body {
-    position: relative;
+    background-color: #030200;
+    color: #F8F8F8;
+    font-family: 'Sen', sans-serif;
+    font-size: 2rem;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
 }
 
-#section1 {
-    padding-top: 50px;
-    height: 750px;
-    color: #fff;
-    background-color: black;
+.content {
+    padding: 50px 25px 50px;
+    max-width: 1500px;
 }
 
-#section2 {
+.section {
     padding-top: 50px;
-    height: 750px;
-    color: #fff;
-    background-color: #673ab7;
+    max-width: 1750px;
+    min-height: 90vh;
+    ;
+    color: #F8F8F8;
 }
 
-#section3 {
-    padding-top: 50px;
-    height: 750px;
-    color: #fff;
-    background-color: #ff9800;
+h1,
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-#section4 {
-    padding-top: 50px;
-    height: 750px;
-    color: #fff;
-    background-color: #00bcd4;
+
+
+#alex {
+    background-color: #030200;
+    justify-content: center;
 }
 
-#section5 {
-    padding-top: 50px;
-    height: 750px;
-    color: #fff;
-    background-color: #009688;
+#about {
+    background-color: #030200;
 }
 
-#section6 {
-    padding-top: 50px;
-    height: 750px;
-    color: #fff;
-    background-color: #673ab7;
+#skills {
+    background-color: #030200;
+}
+
+#contact {
+    background-color: #030200;
 }
 
 .page-progress-container {
@@ -62,14 +63,7 @@ body {
 .navbar {
     background-color: black;
     border-bottom: 0;
-    min-height: 0px;
-}
-
-footer {
-    padding-top: 50px;
-    height: 200px;
-    color: #fff;
-    background-color: #1E88E5;
+    min-height: 10px;
 }
 
 .nav-pills>li {
@@ -79,13 +73,16 @@ footer {
 
 
 .nav-pills>li.active>a,
-.nav-pills>li.active>a:focus,
-.nav-pills>li.active>a:hover {
+.nav-pills>li>a:focus,
+.nav-pills>li.active>a:hover,
+.nav-pills>li>a:hover {
     color: #fff;
     background-color: #333;
     border-bottom: 0px;
     border-radius: 0px;
 }
+
+
 
 .container-fluid {
     padding-right: 0px;
