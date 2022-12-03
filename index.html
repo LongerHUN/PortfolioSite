@@ -5,14 +5,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Asztalos Alex's Official site</title>
+    <title>Alex Asztalos's Official site</title>
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet" />
+    <!--Devicon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!--Jquery link-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>¸
     <!--Bootstrap link-->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--Css link-->
@@ -39,6 +43,7 @@
                         <li><a class="nav-link" href="#alex">Alex Asztalos</a></li>
                         <li><a class="nav-link" href="#about">About</a></li>
                         <li><a class="nav-link" href="#skills">Skills</a></li>
+                        <li><a class="nav-link" href="#projects">My projects</a></li>
                         <li><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -47,19 +52,20 @@
     </header>
 
     <div class="content">
-        <div id="alex" class="container">
-            <div class="col-7">
-                <h1>Alex Asztalos</h1>
-                <p>Junior FrontEnd Developer</p>
+        <div id="alex" class="container vertical-align">
+            <div>
+                <h1 id="spinName"></h1>
+                <p id="junior"></p>
             </div>
-            <div class="col-4">
-                <img src="images/saddasad.png" alt="image" title="image" id="imgAlex" class="img-responsive">
-            </div>
+
+
 
         </div>
         <div id="about" class="container">
             <div class="about">
-                <h1>About Me</h1>
+                <div class="vertical-align">
+                    <h2>About Me</h2>
+                </div>
                 <p>/LongerHUN/</p>
                 <p>
                     Vegyük fontolóra a következő bevezetést, amit magamnak írhatnék a
@@ -85,15 +91,68 @@
             </div>
         </div>
         <div id="skills" class="container">
+            <div class="vertical-align">
+                <h2>Skills</h2>
+            </div>
             <div class="skills">
-                <h1>Skills</h1>
-                <p>Amiket eddig tanultam</p>
+                <ul class="container container-fluid">
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-html5-plain" title="HTML5"></span>
+                        <p>HTML5</p>
+                    </li>
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-css3-plain" title="CSS"></span>
+                        <p>CSS</p>
+                    </li>
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-bootstrap-plain" title="Bootstrap"></span>
+                        <p>Bootstrap</p>
+                    </li>
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-javascript-plain" title="JavaScript"></span>
+                        <p>JavaScript</p>
+                    </li>
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-nodejs-plain" title="NodeJS"></span>
+                        <p>NodeJS</p>
+                    </li>
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-typescript-plain" title="TypeScript"></span>
+                        <p>TypeScript</p>
+                    </li>
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-jquery-plain" title="jQuery"></span>
+                        <p>jQuery</p>
+                    </li>
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-angularjs-plain" title="Angular"></span>
+                        <p>Angular</p>
+                    </li>
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-bootstrap-plain" title="SQL"></span>
+                        <p>SQL</p>
+                    </li>
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-mongodb-plain" title="MongoDB"></span>
+                        <p>MongoDB</p>
+                    </li>
+                    <li class="skill-title col-sm-6 col-md-4">
+                        <span class="devicons devicon-git-plain" title="Git"></span>
+                        <p>Git</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="projects" class="container">
+            <div class="vertical-align">
+                <h2>My projects</h2>
+
             </div>
         </div>
         <div id="contact" class="container">
-            <div class="contact">
-                <h1>Contact</h1>
-                <p>Elérhetőségek</p>
+            <div class="vertical-align">
+                <h2>Contact</h2>
+
             </div>
         </div>
     </div>

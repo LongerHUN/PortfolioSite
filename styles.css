@@ -7,38 +7,7 @@ body {
     letter-spacing: 1.5px;
 }
 
-.content {
-    padding: 50px 25px 50px;
-    max-width: 1500px;
-}
-
-.container {
-    padding-top: 50px;
-    max-width: 1180px;
-    min-height: 90vh;
-    color: #F8F8F8;
-    margin: 0 auto;
-    width: 90%;
-    background-color: #030200;
-    display: block;
-    box-sizing: border-box;
-}
-
-#alex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#imgAlex {
-    float: right;
-}
-
-h1,
-h2 {
-    font-weight: bold;
-    text-transform: uppercase;
-}
+/* NavBar */
 
 .page-progress-container {
     width: 100%;
@@ -100,4 +69,153 @@ h2 {
 
 .navbar-collapse {
     background-color: black;
+}
+
+.content {
+    padding: 50px 25px 50px;
+    max-width: 1500px;
+}
+
+/* Content start */
+
+.container {
+    padding-top: 50px;
+    max-width: 1180px;
+    min-height: 90vh;
+    color: #F8F8F8;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #030200;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+/* Alex Asztalos*/
+h1,
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: inset 0px -5px 0px 0px #23c1cb;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*spin effects*/
+#spinName::after {
+    content: "";
+    animation: spinName 4s linear forwards;
+}
+
+@keyframes spinName {
+    0% {
+        content: "A@#@#&#@#@#";
+    }
+
+    10% {
+        content: "Al#@#@#@#@#";
+    }
+
+    15% {
+        content: "Ale&#@#@#&#";
+    }
+
+    20% {
+        content: "Alex#@#@#@#";
+    }
+
+    30% {
+        content: "Alex A@#&#@#";
+    }
+
+    40% {
+        content: "Alex Asz#@#@&";
+    }
+
+    50% {
+        content: "Alex Aszt&#@#";
+    }
+
+    60% {
+        content: "Alex Aszta#@#";
+    }
+
+    70% {
+        content: "Alex Asztal@&";
+    }
+
+    80% {
+        content: "Alex Asztalo#";
+    }
+
+    90% {
+        content: "Alex Asztalos";
+    }
+
+    100% {
+        content: "Alex Asztalos";
+    }
+}
+
+#junior::after {
+    content: "";
+    animation: spinJobs 4s linear forwards;
+}
+
+@keyframes spinJobs {
+    0% {
+        content: "Joiner";
+    }
+
+    20% {
+        content: "Upholsterer";
+    }
+
+    40% {
+        content: "Commissioner";
+    }
+
+    60% {
+        content: "Package delivery";
+    }
+
+    80% {
+        content: "Truck loader";
+    }
+
+    100% {
+        content: "Junior FrontEnd Developer";
+    }
+}
+
+/* Skills */
+
+
+.skill-title {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.skill-title p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.devicons {
+    font-family: "devicon";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 6.5rem;
+}
+
+.devicons:hover {
+    color: #23c1cb;
 }
