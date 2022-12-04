@@ -71,15 +71,10 @@ body {
     background-color: black;
 }
 
-.content {
-    padding: 50px 25px 50px;
-}
-
 /* Content start */
 
 .container {
     padding-top: 50px;
-    max-width: 1180px;
     min-height: 1000px;
     color: #F8F8F8;
     margin: 0 auto;
