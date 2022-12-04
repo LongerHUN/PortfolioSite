@@ -73,7 +73,6 @@ body {
 
 .content {
     padding: 50px 25px 50px;
-    max-width: 1500px;
 }
 
 /* Content start */
@@ -81,10 +80,9 @@ body {
 .container {
     padding-top: 50px;
     max-width: 1180px;
-    min-height: 90vh;
+    min-height: 1000px;
     color: #F8F8F8;
     margin: 0 auto;
-    width: 90%;
     background-color: #030200;
     display: block;
     box-sizing: border-box;
@@ -113,51 +111,51 @@ h2 {
 
 @keyframes spinName {
     0% {
-        content: "A@#@#&#@#@#";
+        content: "@#@#&#@#@#";
     }
 
     10% {
-        content: "Al#@#@#@#@#";
+        content: "l#@#@#@#@#";
     }
 
     15% {
-        content: "Ale&#@#@#&#";
+        content: "le&#@#@#&#";
     }
 
     20% {
-        content: "Alex#@#@#@#";
+        content: "lex#@#@#@#";
     }
 
     30% {
-        content: "Alex A@#&#@#";
+        content: "lex A@#&#@#";
     }
 
     40% {
-        content: "Alex Asz#@#@&";
+        content: "lex Asz#@#@&";
     }
 
     50% {
-        content: "Alex Aszt&#@#";
+        content: "lex Aszt&#@#";
     }
 
     60% {
-        content: "Alex Aszta#@#";
+        content: "lex Aszta#@#";
     }
 
     70% {
-        content: "Alex Asztal@&";
+        content: "lex Asztal@&";
     }
 
     80% {
-        content: "Alex Asztalo#";
+        content: "lex Asztalo#";
     }
 
     90% {
-        content: "Alex Asztalos";
+        content: "lex Asztalos";
     }
 
     100% {
-        content: "Alex Asztalos";
+        content: "lex Asztalos";
     }
 }
 
@@ -198,7 +196,8 @@ h2 {
 .skill-title {
     list-style: none;
     text-align: center;
-    padding: 10px 0 10px 0;
+    padding: 15px 0 15px 0;
+
 }
 
 .skill-title p {
@@ -219,3 +218,5 @@ h2 {
 .devicons:hover {
     color: #23c1cb;
 }
+
+/* Projects */
