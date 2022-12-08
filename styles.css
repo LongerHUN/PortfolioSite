@@ -2,10 +2,24 @@ body {
     background-color: #030200;
     color: #F8F8F8;
     font-family: 'Sen', sans-serif;
-    font-size: 2rem;
+    font-size: 22px;
     line-height: 1.6;
     letter-spacing: 1.5px;
 }
+
+/* Responsive settings*/
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+
+
 
 /* NavBar */
 
@@ -199,8 +213,9 @@ p [href] {
     list-style: none;
     text-align: center;
     padding: 15px 0 15px 0;
-
 }
+
+
 
 .skill-title p {
     text-align: center;
@@ -218,34 +233,16 @@ p [href] {
 }
 
 .skill-title:hover {
-
-    transition: 2s all;
     color: #23c1cb;
     text-shadow: 1px 1px 5px #23c1cb;
 }
 
-.skill-title:hover::after {
-    color: #333;
-}
-
-@keyframes devIcHov {
-    from {
-        color: #23c1cb;
-        text-shadow: 1px 1px 5px #23c1cb;
-    }
-
-    to {
-        color: white;
-        text-shadow: none;
-    }
-}
 
 /* Projects */
 .proCard {
     width: 300px;
     height: 400px;
     border-radius: 5px;
-    margin: 25px;
     border: #23c1cb 1px solid;
 }
 
