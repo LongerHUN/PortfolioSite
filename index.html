@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!--CSS link-->
     <link rel="stylesheet" href="styles.css">
+    <!-- Theme change -->
+    <link rel="stylesheet" id="themeSW" href="themes/WhiteTheme.css">
     <title>Alex Asztalos's Official site</title>
 </head>
 
@@ -58,13 +60,13 @@
             <p id="junior"></p>
         </div>
     </div>
-    <!--About Me-->
-    <div id="about" class="container">
 
+    <!--About Me-->
+
+    <div id="about" class="container">
         <div class="vertical-align">
             <h2>About Me</h2>
         </div>
-
         <div class="container">
             <p class="col-xs-12 col-sm-6">
                 <b>Helló világ!</b><br>
@@ -119,9 +121,7 @@
         <div class="vertical-align">
             <h2>Skills</h2>
         </div>
-
         <ul class="container skills">
-
             <li class="skill-title col-xs-6 col-sm-6 col-md-4">
                 <span class="devicons devicon-html5-plain" title="HTML5"></span>
                 <p>HTML5</p>
@@ -181,12 +181,13 @@
             <h2>My projects</h2>
         </div>
 
+        <!-- FrontEndMentorNFTF -->
+
         <div class="proCards">
             <div class="frontEndMentorNftImg">
                 <a href="myProjects/FrontEndMentorNFT/FrontEndMentorNft.html" target="_blank">
                     <img src="myProjects/FrontEndMentorNFT/images/FrontEndMentorNFTFront.png"
-                        alt="FrontEndMentorNFTFront" id="frontEndMentorNftImg" title="Full website">
-                </a>
+                        alt="FrontEndMentorNFTFront" id="frontEndMentorNftImg" title="Full website"></a>
             </div>
             <div class="frontEndMentorNftText">
                 <h3>NFT preview card component</h3>
@@ -204,6 +205,9 @@
                 </p>
             </div>
         </div>
+
+        <!-- Tic Tac To -->
+
         <div class="proCards">
             <div class="ticTacToeText">
                 <h3>Tic Tac Toe</h3>
@@ -233,6 +237,9 @@
                 <button id="restartBtn">Restart</button>
             </div>
         </div>
+
+        <!-- Portfolio Site -->
+
         <div class="proCards">
             <div class="portfolioImg">
                 <img src="images/PortfolioImg.png" alt="This website" id="portfolioImg">
@@ -250,7 +257,9 @@
                 </p>
             </div>
         </div>
+
         <!--Contact-->
+
         <div id="contact" class="container">
             <div class="vertical-align">
                 <div>
@@ -272,6 +281,11 @@
             </div>
         </div>
     </div>
+    <!-- Theme change -->
+
+    <div class="switch switchWh" onclick="myChangeWH()"></div>
+    <div class="switch switchBl" onclick="myChangeBl()"></div>
+
     <!--Jquery link-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <!--Bootstrap JS link-->

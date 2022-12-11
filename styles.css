@@ -403,3 +403,32 @@ p [href]:hover {
 .contactText {
     text-align: center;
 }
+
+/* Theme change */
+
+
+.switchWh {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: white;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.switchBl {
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    background-color: black;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.switch:hover {
+    box-shadow: 4px 4px 10px #23c1cb, -4px -4px 10px #23c1cb;
+}

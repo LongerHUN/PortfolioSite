@@ -28,3 +28,11 @@ function checkMediaWidth() {
   }
 }
 window.addEventListener("resize", checkMediaWidth);
+
+//Theme change
+function myChangeWH() {
+  document.getElementById("themeSW").href = "themes/WhiteTheme.css";
+}
+function myChangeBl() {
+  document.getElementById("themeSW").href = "themes/blackTheme.css";
+}
