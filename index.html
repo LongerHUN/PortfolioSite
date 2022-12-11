@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="author" content="Alex Asztalos">
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
     <!--Devicon link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-
     <!--Bootstrap CSS link-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!--CSS link-->
@@ -54,7 +52,9 @@
     <!--Alex-->
     <div id="alex" class="container vertical-align">
         <div>
-            <h1 id="spinName">A</h1>
+            <h1 id="spinName">
+                <span style="display: none;">Alex Asztalos</span>
+            </h1>
             <p id="junior"></p>
         </div>
     </div>
@@ -67,45 +67,47 @@
 
         <div class="container">
             <p class="col-xs-12 col-sm-6">
-                <b>Helló világ!</b><br>Alex Asztalos vagyok, Magyarországon születtem, 31éves vagyok, 7 éve élek
-                Németországban, jelenleg Berkamenbe lakok.
-                gyermek korom óta foglalkozom játék konfigurálással, szerver kezeléssel és weboldal készítéssel mert
-                szeretem a logikus és koordinált tervezést. Számomra mindig könnyen érthetők voltak a különféle program
-                nyelvek.
+                <b>Helló világ!</b><br>
+                Alex Asztalos vagyok, Magyarországon születtem és 31éves vagyok. 7 éve élek Németországban, jelenleg
+                Bergkamenben. gyermek korom óta foglalkozom játék konfigurálással, szerver kezeléssel és weboldal
+                készítéssel, mert szeretem a logikus és koordinált tervezést. Számomra mindig könnyen érthetők voltak a
+                különféle program nyelvek.
                 <br><br>
 
                 <b>
-                    Junior Frontend fejlesztői munkát keresek mert most végeztem egy 1éves Junior Frontend
-                    képzést a Ruander Oktatásiközpotba.
+                    Junior Frontend fejlesztői munkát keresek, mert most végeztem egy 1éves Junior Frontend képzést a
+                    Ruander Oktatási közpotban.
                 </b>
                 <br><br>
 
-                Azért választottam a Frontend fejlesztő vonalat mert izgalmas és érdekes számomra, folyamatosan
-                változik, fejlődik, ahogy az életünk és a világunk.
+                Azért választottam a Frontend fejlesztő vonalat, mert izgalmas és érdekes számomra, folyamatosan
+                változik, fejlődik, ahogy az életünk és a világunk is.
                 <br><br>
 
-                Én együtt szeretnék haladni a világ fejlődésével vagy még elötte járni és biztos vagyok benne hogy a
-                képességeimel és a tudásommal jó szakemberek között nagyon gyorsan kimagasló munkát végezhetek, amibe
-                örömömet lelem. Tudom ez a szakma élethosszig tartó tanulással jár, de örömmel éllok elébe.
+                Én együtt szeretnék haladni a világ fejlődésével vagy még elötte járni és biztos vagyok benne, hogy a
+                képességeimel és a tudásommal jó szakemberek között nagyon gyorsan kimagasló munkát végezhetek, amiben
+                örömömet lelem. Tudom, ez a szakma élethosszig tartó tanulással jár, de örömmel állok elébe.
                 <br><br>
             </p>
             <p class="col-xs-12 col-sm-6">
-                <b>Hello World!</b><br>My name is Alex Asztalos, I was born in Hungary, I am 31 years old, I have been
-                living in Germany for 7 years, I currently live in Berkamen.
-                I have been involved in game configuration, server management and website creation since I was a child
-                because I like logical and coordinated planning. For me, the various programming languages were always
-                easy to understand.
+                <b>Hello World!</b><br>
+                My name is Alex Asztalos, I was born in Hungary and I am 31 years old. I have been living in Germany for
+                7 years, currently in Bergkamen. I have been involved in game configuration, server management and
+                website creation since I was a child, because I like logical and coordinated planning. For me, the
+                various programming languages were always easy to understand.
                 <br><br>
                 <b>
-                    I am looking for a Junior Frontend developer job because I have just finished a 1-year Junior
-                    Frontend training at the <a href="https://www.ruander.hu/" target="_blank">Ruander Education
-                        Center</a>.
+                    I am looking for a Junior Frontend developer job, because I just finished a 1-year Junior Frontend
+                    training course at the <a href="https://www.ruander.hu/" target="_blank" title="Ruander Education
+                    Center">Ruander Education Center</a>.
                 </b>
                 <br><br>
-                I want to move along with the development of the world or even go ahead of it, and I am sure that with
-                my skills and knowledge I can do excellent work very quickly among good professionals, which I find joy
-                in. I know this profession involves lifelong learning, but I am happy to face it.
+                I chose the Frontend development line because it is exciting and interesting to me, it is constantly
+                changing and developing, just like our life and our world.
                 <br><br>
+                I want to move along with the development of the world or even go ahead of it, and I am sure that with
+                my skills and knowledge I can very quickly do outstanding work among good professionals, which I find
+                joy in. I know this profession involves lifelong learning, but I am happy to face it.
             </p>
         </div>
     </div>
@@ -165,7 +167,10 @@
                 <span class="devicons devicon-git-plain" title="Git"></span>
                 <p>Git</p>
             </li>
-
+            <li class="skill-title col-xs-6 col-sm-6 col-md-4">
+                <span class="devicons devicon-github-plain" title="GitHub"></span>
+                <p>GitHub</p>
+            </li>
         </ul>
     </div>
 
@@ -177,21 +182,42 @@
         </div>
 
         <div class="proCards">
-            <div><img src="myProjects/FrontEndMentorNFT/images/FrontEndMentorNFTFront.png" alt="FrontEndMentorNFTFront"
-                    id="FrontEndMentorNftImg"></div>
-            <div class="FrontEndMentorNftText">
+            <div class="frontEndMentorNftImg">
+                <a href="myProjects/FrontEndMentorNFT/FrontEndMentorNft.html" target="_blank">
+                    <img src="myProjects/FrontEndMentorNFT/images/FrontEndMentorNFTFront.png"
+                        alt="FrontEndMentorNFTFront" id="frontEndMentorNftImg" title="Full website">
+                </a>
+            </div>
+            <div class="frontEndMentorNftText">
                 <h3>NFT preview card component</h3>
-                <p>Chellenge from <a
-                        href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U">Frontend
-                        Mentor</a></p>
+                <p>
+                    Chellenge from <a
+                        href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U"
+                        target="_blank" title="Frontend Mentor NFT">Frontend
+                        Mentor</a>
+                </p>
+                <p>
+                    <span class="prodevicons devicon-html5-plain" title="HTML5"></span>
+                    <span class="prodevicons devicon-css3-plain" title="CSS"></span>
+                    <a href="https://github.com/LongerHUN/FrontEndMentorNFT" target="_blank"><span
+                            class="prodevicons devicon-github-plain" title="GitHub FrontEndMentor NFT code"></span></a>
+                </p>
             </div>
         </div>
         <div class="proCards">
-            <div class="TicTacToeText">
+            <div class="ticTacToeText">
                 <h3>Tic Tac Toe</h3>
-                <p>Self made mini game whit auto enemy</p>
+                <p>Self made mini game whit bot enemy</p>
+                <p>
+                    <span class="prodevicons devicon-html5-plain" title="HTML5"></span>
+                    <span class="prodevicons devicon-css3-plain" title="CSS"></span>
+                    <span class="prodevicons devicon-javascript-plain" title="JavaScript"></span>
+
+                    <a href="https://github.com/LongerHUN/ticTacToeGame" target="_blank"><span
+                            class="prodevicons devicon-github-plain" title="GitHub Tic Tac Toe Game code"></span></a>
+                </p>
             </div>
-            <div class="TicTacToeScript">
+            <div class="ticTacToeScript">
                 <div id="cellContiner">
                     <div slot="0" class="cell"></div>
                     <div slot="1" class="cell"></div>
@@ -207,10 +233,42 @@
                 <button id="restartBtn">Restart</button>
             </div>
         </div>
+        <div class="proCards">
+            <div class="portfolioImg">
+                <img src="images/PortfolioImg.png" alt="This website" id="portfolioImg">
+            </div>
+            <div id="portfolioText">
+                <h3>This Website</h3>
+                <p>I made whit my self ideas, I try use lot difference tecnologies</p>
+                <p>
+                    <span class="prodevicons devicon-html5-plain" title="HTML5"></span>
+                    <span class="prodevicons devicon-css3-plain" title="CSS"></span>
+                    <span class="prodevicons devicon-javascript-plain" title="JavaScript"></span>
+                    <span class="prodevicons devicon-bootstrap-plain" title="Bootstrap"></span>
+                    <a href="https://github.com/LongerHUN/PortfolioSite" target="_blank"><span
+                            class="prodevicons devicon-github-plain" title="GitHub Portfolio Site code"></span></a>
+                </p>
+            </div>
+        </div>
         <!--Contact-->
         <div id="contact" class="container">
             <div class="vertical-align">
-                <h2>Contact</h2>
+                <div>
+                    <h2>Contact</h2>
+                </div>
+            </div>
+
+            <div class="contactText">
+                <p>Thank you for looking at my site, I hope you liked it, I'm working on it to make it even better,
+                    if you have any ideas or work for me feel free to ask.</p>
+                <p>My contact details:</p>
+                <p><a href="mailto:asztalos.alex.91@gmail.com?subject=MailFromMyPortfolioSite"
+                        title="Email to Alex Asztalos" target="_blank">asztalos.alex.91@gmail.com</a></p>
+                <p><a href="https://github.com/LongerHUN" target="_blank"><span class="prodevicons devicon-github-plain"
+                            title="My GitHub profile"></span></a>
+                    <a href="https://linkedin.com/in/alex-asztalos-hun" target="_blank"><span
+                            class="prodevicons devicon-linkedin-plain" title="My LinkedIn profile"></span></a>
+                </p>
             </div>
         </div>
     </div>
@@ -220,6 +278,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--Scroll Bar-->
     <script src="scripts.js"></script>
+    <!--TicTacToe-->
     <script src="myProjects/ticTacToeGame/TicTacToe.js"></script>
 </body>
 

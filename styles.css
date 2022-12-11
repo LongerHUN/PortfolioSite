@@ -13,8 +13,8 @@ body {
         font-size: 18px;
     }
 
-    h1 {
-        font-size: 30px;
+    #spinName {
+        font-size: 32px;
     }
 }
 
@@ -104,8 +104,16 @@ h2 {
     box-shadow: inset 0px -5px 0px 0px #23c1cb;
 }
 
+h1 {
+    font-size: 38px;
+}
+
 h3 {
     font-weight: bold;
+}
+
+h2:hover {
+    text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
 }
 
 .vertical-align {
@@ -122,51 +130,63 @@ h3 {
 
 @keyframes spinName {
     0% {
-        content: "@#@#&#@#@#";
+        content: "A@#@#&#@#@#";
+        text-shadow: none;
     }
 
     10% {
-        content: "l#@#@#@#@#";
+        content: "Al#@#@#@#@#";
+        text-shadow: none;
     }
 
     15% {
-        content: "le&#@#@#&#";
+        content: "Ale&#@#@#&#";
+        text-shadow: none;
     }
 
     20% {
-        content: "lex#@#@#@#";
+        content: "Alex#@#@#@#";
+        text-shadow: none;
     }
 
     30% {
-        content: "lex A@#&#@#";
+        content: "Alex A@#&#@#";
+        text-shadow: none;
     }
 
     40% {
-        content: "lex Asz#@#@&";
+        content: "Alex Asz#@#@&";
+        text-shadow: none;
     }
 
     50% {
-        content: "lex Aszt&#@#";
+        content: "Alex Aszt&#@#";
+        text-shadow: none;
     }
 
     60% {
-        content: "lex Aszta#@#";
+        content: "Alex Aszta#@#";
+        text-shadow: none;
     }
 
     70% {
-        content: "lex Asztal@&";
+        content: "Alex Asztal@&";
+        text-shadow: none;
     }
 
     80% {
-        content: "lex Asztalo#";
+        content: "Alex Asztalo#";
+        text-shadow: none;
     }
 
     90% {
-        content: "lex Asztalos";
+        content: "Alex Asztalos";
+        text-shadow: none;
     }
 
     100% {
-        content: "lex Asztalos";
+        content: "Alex Asztalos";
+        text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
     }
 }
 
@@ -178,26 +198,32 @@ h3 {
 @keyframes spinJobs {
     0% {
         content: "Joiner";
+        text-shadow: none;
     }
 
     20% {
         content: "Upholsterer";
+        text-shadow: none;
     }
 
     40% {
         content: "Commissioner";
+        text-shadow: none;
     }
 
     60% {
         content: "Package delivery";
+        text-shadow: none;
     }
 
     80% {
         content: "Truck loader";
+        text-shadow: none;
     }
 
     100% {
         content: "Junior FrontEnd Developer";
+        text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
     }
 }
 
@@ -247,35 +273,65 @@ p [href]:hover {
 
 
 /* Projects */
+#projects {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
 .proCards {
-    height: 500px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     grid-gap: 10px;
-    padding: 50px
+    padding: 25px 0 25px 0;
 }
 
-.proCards>div {
+@media only screen and (max-width:1000px) {
+    .proCards {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+}
+
+.prodevicons {
+    font-size: 36px;
+    padding: 15px 10px 15px 10px;
+}
+
+.prodevicons:hover {
+    text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+}
+
+/* FrontEndMentor */
+#frontEndMentorNftImg {
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #23c1cb, -4px -4px 10px #23c1cb;
+}
+
+.frontEndMentorNftImg {
     margin: 0 auto;
 }
 
-
-#FrontEndMentorNftImg {
-    height: 450px;
-    border-radius: 10px;
-
+.frontEndMentorNftText {
+    text-align: center;
 }
 
 
 /* TicTacToe */
-.TicTacToeScript {
+.ticTacToeScript {
     text-align: center;
 }
 
 #restartBtn {
     background-color: #030200;
     color: #23c1cb;
+}
+
+#restartBtn:hover {
+    text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
 }
 
 .cell {
@@ -309,4 +365,41 @@ p [href]:hover {
     padding-top: 15px;
 }
 
+.ticTacToeText {
+    text-align: center;
+}
+
+/* Portfoli */
+
+#portfolioImg {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+    text-align: center;
+}
+
+.portfolioImg {
+    text-align: center;
+}
+
+#portfolioText {
+    text-align: center;
+}
+
+
+
+
 /* Contact */
+
+#contact {
+    margin-top: 50px;
+
+}
+
+#contact>div>div>h2 {
+    margin-bottom: 50px;
+}
+
+.contactText {
+    text-align: center;
+}
