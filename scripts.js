@@ -21,9 +21,11 @@ function pageLoadBar() {
 function checkMediaWidth() {
   if (window.innerWidth < 875) {
     document.getElementById("littleAlex").innerHTML = "Alex";
-  } else if (window.innerWidth < 768) {
+  }
+  if (window.innerWidth < 768) {
     document.getElementById("littleAlex").innerHTML = "Alex Asztalos";
-  } else {
+  }
+  if (window.innerWidth > 875) {
     document.getElementById("littleAlex").innerHTML = "Alex Asztalos";
   }
 }

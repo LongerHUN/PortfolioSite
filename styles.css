@@ -1,3 +1,7 @@
+:root {
+    --shadow: 0px 0px 10px #23c1cb;
+}
+
 body {
     background-color: #030200;
     color: #F8F8F8;
@@ -113,7 +117,7 @@ h3 {
 }
 
 h2:hover {
-    text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+    text-shadow: var(--shadow);
 }
 
 .vertical-align {
@@ -186,7 +190,7 @@ h2:hover {
 
     100% {
         content: "Alex Asztalos";
-        text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+        text-shadow: var(--shadow);
     }
 }
 
@@ -223,7 +227,7 @@ h2:hover {
 
     100% {
         content: "Junior FrontEnd Developer";
-        text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+        text-shadow: var(--shadow);
     }
 }
 
@@ -236,7 +240,7 @@ p [href] {
 p [href]:hover {
     text-decoration: none;
     color: #23c1cb;
-    text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+    text-shadow: var(--shadow);
 }
 
 
@@ -268,7 +272,7 @@ p [href]:hover {
 
 .skill-title:hover {
     color: #23c1cb;
-    text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+    text-shadow: var(--shadow);
 }
 
 
@@ -301,14 +305,14 @@ p [href]:hover {
 }
 
 .prodevicons:hover {
-    text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+    text-shadow: var(--shadow);
 }
 
 /* FrontEndMentor */
 #frontEndMentorNftImg {
     height: 450px;
     border-radius: 10px;
-    box-shadow: 4px 4px 10px #23c1cb, -4px -4px 10px #23c1cb;
+    box-shadow: var(--shadow);
 }
 
 .frontEndMentorNftImg {
@@ -331,7 +335,7 @@ p [href]:hover {
 }
 
 #restartBtn:hover {
-    text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+    text-shadow: var(--shadow);
 }
 
 .cell {
@@ -342,7 +346,7 @@ p [href]:hover {
     font-size: 50px;
     cursor: pointer;
     color: #23c1cb;
-    text-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+    text-shadow: var(--shadow);
 }
 
 #gameContainer {
@@ -356,7 +360,7 @@ p [href]:hover {
     grid-template-columns: repeat(3, auto);
     width: 225px;
     margin: 0 auto;
-    box-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+    box-shadow: var(--shadow);
 }
 
 #statusText {
@@ -374,7 +378,7 @@ p [href]:hover {
 #portfolioImg {
     width: 300px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px #23c1cb, -2px -2px 5px #23c1cb;
+    box-shadow: var(--shadow);
     text-align: center;
 }
 
@@ -412,7 +416,7 @@ p [href]:hover {
     right: 20px;
     bottom: 20px;
     background-color: white;
-    border: 1px solid black;
+    border: 3px solid black;
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -423,12 +427,38 @@ p [href]:hover {
     right: 20px;
     bottom: 60px;
     background-color: black;
-    border: 1px solid white;
+    border: 3px solid white;
     width: 30px;
     height: 30px;
     border-radius: 15px;
 }
 
 .switch:hover {
-    box-shadow: 4px 4px 10px #23c1cb, -4px -4px 10px #23c1cb;
+    box-shadow: var(--shadow);
+}
+
+/* Language change */
+.langSw {
+    position: absolute;
+    right: 55px;
+    bottom: 35px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 3px solid white;
+    background-image: url(images/flagGermany.png);
+    background-position: center;
+    background-size: 40px 40px;
+}
+
+.langSw:hover {
+    box-shadow: var(--shadow);
+}
+
+.langSw>a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
