@@ -2,6 +2,10 @@
     --shadow: 0px 0px 10px #23c1cb;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #030200;
     color: #F8F8F8;
@@ -330,8 +334,8 @@ p [href]:hover {
 }
 
 #restartBtn {
-    background-color: #030200;
     color: #23c1cb;
+    cursor: pointer;
 }
 
 #restartBtn:hover {
@@ -420,6 +424,7 @@ p [href]:hover {
     width: 30px;
     height: 30px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .switchBl {
@@ -431,6 +436,7 @@ p [href]:hover {
     width: 30px;
     height: 30px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .switch:hover {
@@ -461,4 +467,21 @@ p [href]:hover {
     height: 100%;
     top: 0;
     left: 0;
+}
+
+/* Go to Top */
+.toTop {
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    color: #23c1cb;
+    cursor: pointer;
+}
+
+.toTop:hover {
+    text-shadow: var(--shadow);
+
 }

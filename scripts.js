@@ -38,3 +38,12 @@ function myChangeWH() {
 function myChangeBl() {
   document.getElementById("themeSW").href = "themes/blackTheme.css";
 }
+
+//Scroll to top
+
+function toTop() {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+}
