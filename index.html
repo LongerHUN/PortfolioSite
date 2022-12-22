@@ -19,7 +19,14 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Theme change -->
     <link rel="stylesheet" id="themeSW" href="themes/blackTheme.css">
-    <title>Alex Asztalos's Official site</title>
+
+    <!--Fav Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+    <title>Alex Asztalos | Junior Frontend developer</title>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -55,7 +62,7 @@
     <div id="alex" class="container vertical-align">
         <div>
             <h1 id="spinName">
-                <span style="display: none;">Alex Asztalos</span>
+                <span style="display: none;">Alex Asztalos Junior Frontend developer</span>
             </h1>
             <p id="junior"></p>
         </div>
@@ -68,30 +75,7 @@
             <h2>About Me</h2>
         </div>
         <div class="container">
-            <p class="col-xs-12 col-sm-6">
-                <b>Helló világ!</b><br>
-                Alex Asztalos vagyok, Magyarországon születtem és 31éves vagyok. 7 éve élek Németországban, jelenleg
-                Bergkamenben. gyermek korom óta foglalkozom játék konfigurálással, szerver kezeléssel és weboldal
-                készítéssel, mert szeretem a logikus és koordinált tervezést. Számomra mindig könnyen érthetők voltak a
-                különféle program nyelvek.
-                <br><br>
-
-                <b>
-                    Junior Frontend fejlesztői munkát keresek, mert most végeztem egy 1éves Junior Frontend képzést a
-                    Ruander Oktatási közpotban.
-                </b>
-                <br><br>
-
-                Azért választottam a Frontend fejlesztő vonalat, mert izgalmas és érdekes számomra, folyamatosan
-                változik, fejlődik, ahogy az életünk és a világunk is.
-                <br><br>
-
-                Én együtt szeretnék haladni a világ fejlődésével vagy még elötte járni és biztos vagyok benne, hogy a
-                képességeimel és a tudásommal jó szakemberek között nagyon gyorsan kimagasló munkát végezhetek, amiben
-                örömömet lelem. Tudom, ez a szakma élethosszig tartó tanulással jár, de örömmel állok elébe.
-                <br><br>
-            </p>
-            <p class="col-xs-12 col-sm-6">
+            <p class="col-xs-12 col-md-12 col-sm-12  col-lg-6">
                 <b>Hello World!</b><br>
                 My name is Alex Asztalos, I was born in Hungary and I am 31 years old. I have been living in Germany for
                 7 years, currently in Bergkamen. I have been involved in game configuration, server management and
@@ -111,6 +95,11 @@
                 my skills and knowledge I can very quickly do outstanding work among good professionals, which I find
                 joy in. I know this profession involves lifelong learning, but I am happy to face it.
             </p>
+            <div class="col-xs-12  col-md-12 col-sm-12 col-lg-6 vertical-align">
+                <img class="itsMe img-rounded img-responsive " alt="Alex Asztalos" title="Alex Asztalos"
+                    src="images/AlexAsztalos.jpg">
+            </div>
+
         </div>
     </div>
 
@@ -181,6 +170,32 @@
             <h2>My projects</h2>
         </div>
 
+        <!-- frontEndMentorIPC -->
+        <div class="proCards">
+
+            <div class="frontEndMentorIPCText">
+                <h3>Interactive pricing component</h3>
+                <p>
+                    Challenge from <a
+                        href="https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8"
+                        target="_blank" title="Frontend Mentor IPC">Frontend
+                        Mentor</a>
+                </p>
+                <p>
+                    <span class="prodevicons devicon-html5-plain" title="HTML5"></span>
+                    <span class="prodevicons devicon-css3-plain" title="CSS"></span>
+                    <span class="prodevicons devicon-javascript-plain" title="JavaScript"></span>
+                    <a href="https://github.com/LongerHUN/FrontEndMentorInterPriceComp" target="_blank"><span
+                            class="prodevicons devicon-github-plain" title="GitHub FrontEndMentor IPC code"></span></a>
+                </p>
+            </div>
+            <div class="frontEndMentorIPCImg">
+                <a href="myProjects/FrontEndMentorInterPriceComp/index.html" target="_blank">
+                    <img src="myProjects/FrontEndMentorInterPriceComp/images/FrontEndMentorIPCPic.jpg"
+                        id="frontEndMentorIPCImg" title="Full website"></a>
+            </div>
+        </div>
+
         <!-- FrontEndMentorNFTF -->
 
         <div class="proCards">
@@ -205,6 +220,8 @@
                 </p>
             </div>
         </div>
+
+
 
         <!-- Tic Tac To -->
 
@@ -268,7 +285,7 @@
                 </div>
             </div>
 
-            <div class="contactText">
+            <div class="contactText col-md-12 col-sm-12">
                 <p>Thank you for looking at my site, I hope you liked it, I'm working to make it even better, if you
                     have any ideas or work, please write for me.</p>
                 <p>My contact details:</p>
@@ -281,7 +298,7 @@
                 </p>
             </div>
             <!-- Scroll to top -->
-            <div class="toTop" onclick="toTop()">Back to Top</div>
+            <div class="toTop col-md-12 col-sm-12 " onclick="toTop()">Back to Top</div>
         </div>
     </div>
     <!-- Theme change -->
@@ -290,7 +307,7 @@
     <div class="switch switchBl" onclick="myChangeBl()"></div>
 
     <!-- Language change -->
-    <div class="langSw"><a href="http://alexasztalos.de/" title="Switch to English" target="_self"></a></div>
+    <div class="langSw"><a href="https://alexasztalos.de/" title="Switch to English" target="_self"></a></div>
 
     <!--Jquery link-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
