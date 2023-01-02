@@ -329,12 +329,33 @@ p [href]:hover {
     text-shadow: var(--shadow);
 }
 
+/* Angular project */
+.angularProText {
+    text-align: center;
+}
+
+.angularProClassimg {
+    margin: 0 auto;
+}
+
+#angularProImg {
+    height: 250px;
+    border-radius: 10px;
+    filter: brightness(80%);
+
+}
+
+#angularProImg:hover {
+    scale: 1.05;
+    filter: none;
+}
+
 /* frontEndMentorIPC */
 #frontEndMentorIPCImg {
-    height: 450px;
+    height: 350px;
     border-radius: 10px;
     box-shadow: var(--shadow);
-    filter: brightness(70%);
+    filter: brightness(60%);
 }
 
 #frontEndMentorIPCImg:hover {
@@ -342,7 +363,7 @@ p [href]:hover {
     filter: none;
 }
 
-.frontEndMentorIPCImg {
+.frontEndMentorIPCImgClass {
     margin: 0 auto;
 }
 
@@ -352,7 +373,7 @@ p [href]:hover {
 
 /* FrontEndMentor NFT */
 #frontEndMentorNftImg {
-    height: 450px;
+    height: 350px;
     border-radius: 10px;
     box-shadow: var(--shadow);
 }
