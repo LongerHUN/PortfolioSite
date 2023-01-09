@@ -329,6 +329,18 @@ p [href]:hover {
     text-shadow: var(--shadow);
 }
 
+#frontEndMentorNHPImg {
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    filter: brightness(60%);
+    max-width: 300px;
+}
+
+#frontEndMentorNHPImg:hover {
+    scale: 1.05;
+    filter: none;
+}
+
 /* Angular project */
 .angularProText {
     text-align: center;
