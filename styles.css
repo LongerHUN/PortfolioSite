@@ -362,7 +362,7 @@ p [href]:hover {
     filter: none;
 }
 
-/* frontEndMentorIPC */
+/* frontEndMentorIPC and NHP and React*/
 #frontEndMentorIPCImg {
     height: 350px;
     border-radius: 10px;
@@ -481,6 +481,9 @@ p [href]:hover {
 .contactText {
     text-align: center;
 }
+
+
+
 
 /* Theme change */
 
