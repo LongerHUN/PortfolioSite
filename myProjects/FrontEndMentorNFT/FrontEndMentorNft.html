@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: hsl(215, 51%, 70%);
+
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+      font-family: "Outfit", sans-serif;
+    }
+
+    .cardBody {
+      background-color: hsl(216, 50%, 16%);
+      width: 400px;
+      height: 650px;
+      border-radius: 15px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -325px 0 0 -200px;
+      color: hsl(215, 51%, 70%);
+    }
+
+    .cardImagePosition {
+      width: 350px;
+      height: 350px;
+      margin: 25px;
+      border-radius: 10px;
+    }
+
+    #hoverEffectImage {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      opacity: 0;
+      width: 350px;
+      height: 350px;
+      margin: 25px;
+      border-radius: 10px;
+    }
+
+    #cardImage {
+      width: 350px;
+      height: 350px;
+      border-radius: 10px;
+    }
+
+    .cardImage:hover {
+      opacity: 1;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    #nameAndID {
+      color: white;
+      font-size: 18px;
+      margin: 25px;
+    }
+
+    #nameAndID:hover {
+      color: hsl(178, 100%, 50%);
+      font-size: 18px;
+      margin: 25px;
+    }
+
+    #skills {
+      color: hsl(215, 51%, 70%);
+      font-size: 16px;
+      margin: 25px;
+    }
+
+    #ETH {
+      color: hsl(178, 100%, 50%);
+      font-size: 16px;
+      margin: 25px;
+    }
+
+    #countDown {
+      color: hsl(215, 51%, 70%);
+      font-size: 16px;
+      float: right;
+      padding-right: 25px;
+    }
+
+    #creator {
+      color: hsl(215, 51%, 70%);
+      font-size: 14px;
+      margin: 25px;
+      height: 60px;
+      border-top: 1px solid rgb(47, 65, 89);
+      padding: 10px;
+    }
+
+    #creatorName {
+      color: white;
+      font-size: 14px;
+    }
+
+    #creatorName:hover {
+      color: hsl(178, 100%, 50%);
+      font-size: 14px;
+    }
+
+    #hoverEffectImage img {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 142px;
+      right: 147px;
+    }
+
+    #hoverEffectImage:hover {
+      opacity: 1;
+      background-color: rgba(0, 255, 255, 50%);
+    }
+
+    #ETHImg,
+    #countDownImg {
+      height: 16px;
+    }
+
+    #avatarImg {
+      height: 50px;
+      border: 1px solid white;
+      border-radius: 10rem;
+    }
+
+    #creatorNameBox {
+      position: absolute;
+      top: 585px;
+      left: 110px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cardBody">
+    <div class="cardImagePosition">
+      <img id="cardImage" src="images/image-equilibrium.jpg" alt="equilibrium" />
+
+      <div id="hoverEffectImage">
+        <img src="images/icon-view.svg" alt="favicon" />
+      </div>
+    </div>
+    <div id="nameAndID">Equilibrium #3429</div>
+    <div id="skills">
+      Our Equilibrium collection promotes balance and calm.
+    </div>
+    <div class="ETHAndCountDown">
+      <span id="ETH"><img id="ETHImg" src="images/icon-ethereum.svg" alt="ethereum" />
+        0.041 ETH</span><span id="countDown"><img id="countDownImg" src="images/icon-clock.svg" alt="clock" /> 3
+        days left</span>
+    </div>
+
+    <div id="creator">
+      <img id="avatarImg" src="images/image-avatar.png" alt="avatar" />
+      <div id="creatorNameBox">
+        Creation of
+        <span id="creatorName">Jules Wyvern</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="#">LongerHUN</a>.
+  </div>
+</body>
+
+</html>

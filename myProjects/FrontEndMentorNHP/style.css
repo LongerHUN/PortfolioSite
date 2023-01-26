@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+    --SoftOrange: hsl(35, 77%, 62%);
+    --SoftRed: hsl(5, 85%, 63%);
+
+    --Off-white: hsl(36, 100%, 99%);
+    --GrayishBlue: hsl(233, 8%, 79%);
+    --DarkDrayishBlue: hsl(236, 13%, 42%);
+    --VeryDarkBlue: hsl(240, 100%, 5%);
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: var(--SoftRed);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+}
+
+.header nav #menu-close {
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.header nav {
+    opacity: 0;
+    z-index: -999;
+    transition: all 0.3s ease-in-out;
+}
+
+.header nav.open {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 75vw;
+    background-color: white;
+    padding: 1.25rem;
+    opacity: 1;
+    z-index: 99999999999;
+}
+
+.header nav ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header nav ul li {
+    margin: 1.5rem 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header nav ul li:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.header .menu-button button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.fImg {
+    grid-area: fImg;
+    background-image: url(assets/images/image-web-3-desktop.jpg);
+    min-height: 250px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.fText {
+    grid-area: fText;
+}
+
+.fText>p {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.tTextBox {
+    grid-area: tTextBox;
+}
+
+.sideBar {
+    grid-area: sideBar;
+    padding: 15px;
+    background-color: var(--VeryDarkBlue);
+    color: var(--Off-white);
+}
+
+.sideBar>p {
+    padding-bottom: 25px;
+}
+
+.sideBar>h1 {
+    color: var(--SoftOrange);
+}
+
+.sideBar>h3:hover {
+    color: var(--SoftOrange);
+}
+
+.boxOne {
+    grid-area: boxOne;
+}
+
+.boxTwo {
+    grid-area: boxTwo;
+}
+
+.boxThree {
+    grid-area: boxThree;
+
+}
+
+.SBoxes>img {
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+}
+
+.SBoxes>h2 {
+    color: var(--Off-white);
+}
+
+.SBoxes>a {
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+.SBoxes>a:hover {
+    color: var(--SoftOrange);
+
+}
+
+.SBoxes p:first-of-type {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    color: var(--GrayishBlue);
+    margin-bottom: 10px;
+}
+
+.section {
+    display: grid;
+    grid-template-areas: 'fImg fImg sideBar'
+        'fImg fImg sideBar'
+        'fText tTextBox sideBar'
+        'boxOne boxTwo boxThree'
+    ;
+    gap: 25px;
+}
+
+.readMoreBtn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--SoftRed);
+    text-align: center;
+    line-height: 50px;
+    color: var(--Off-white);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.readMoreBtn:hover {
+    background-color: var(--VeryDarkBlue);
+    cursor: pointer;
+}
+
+@media (max-width:1000px) {
+    .section {
+        display: grid;
+        grid-template-areas: 'fImg'
+            'fText'
+            'tTextBox'
+            'sideBar'
+            'boxOne'
+            'boxTwo'
+            'boxThree';
+
+    }
+
+    .fImg {
+        background-image: url(assets/images/image-web-3-mobile.jpg);
+    }
+
+    .SBoxes>img {
+        height: 200px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .header {
+        padding: 2rem 1.25rem;
+    }
+
+    .header nav {
+        opacity: 1;
+        z-index: auto;
+        width: 100%;
+    }
+
+    .header nav.open {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        z-index: auto;
+    }
+
+    .header nav #menu-close {
+        display: none;
+    }
+
+    .header nav ul {
+        position: relative;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+        transform: translateY(0%);
+    }
+
+    .header nav ul li {
+        margin: 0;
+    }
+
+    .header .menu-button button {
+        display: none;
+    }
+}

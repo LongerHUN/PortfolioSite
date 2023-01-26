@@ -1,0 +1,26 @@
+body {
+    background-color: #F8F8F8;
+    color: #030200;
+}
+
+.navbar {
+    background-color: #F8F8F8;
+}
+
+.active,
+.nav-link:hover {
+    color: #030200;
+}
+
+.container {
+    background-color: #F8F8F8;
+    color: #030200;
+}
+
+.langSw {
+    border: 3px solid black;
+}
+
+#frontEndMentorIPCImg {
+    filter: none;
+}
